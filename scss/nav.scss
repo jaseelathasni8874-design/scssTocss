@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: rgb(138, 229, 196);
+  color: #176B3A;
+
+   img {
+    width: 100px;
+    
+    border-radius: 50px;
+   }
+  h2 {
+    margin: 0;
+  }
+
+  ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+
+    ul {
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
